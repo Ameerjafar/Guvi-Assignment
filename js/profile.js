@@ -1,6 +1,6 @@
 
 function sendData() {
-    var email = localStorage.getItem('username');
+    var email = localStorage.getItem('email');
     // Serialize form data
     var formData = $('#update-profile-form').serializeArray();
 
@@ -51,10 +51,9 @@ function checkUsernameInMongoDB() {
             var data = responseData.data;
             console.log(data);
             $('#name').text('Name: ' + data.fullname);
-            $('#gender').text('gender' + data.gender)
-            $('#bio').text('Bio: ' + data.dob);
+            $('#bio').text('Bio:' + data.dob);
             $('#age').text('age: ' + data.age);
-            $('#contactInfo').html('Phone: ' + data.contact + '<br>Email: ' + data.email);
+            $('#contactInfo').text('Phone: ' + data.contact);
             $('#state').text('state: ' + data.state);
             $('#education').text('Education: ' + data.education);
             $('#occupation').text('state: ' + data.occupation);
