@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src = "./js/register.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-    <form method = "post">
-        <input type = 'text' id = "nameInput" name = "name" placeholder="Enter your name" >
-        <input type = 'text' id = "emailInput" name = "email" placeholder="Enter your Email" >
-        <input type = 'password' id = "passwordInput" name = "password" placeholder="Enter your password">
-        <button id ="submitButton">submit</button>
-    </form>
+    <div class="container">
+        <h2 class="text-center mb-4">Registration Form</h2>
+        <form method="post">
+            <input type="text" id="nameInput" name="name" class="form-control" placeholder="Enter your name">
+            <input type="text" id="emailInput" name="email" class="form-control" placeholder="Enter your Email">
+            <input type="password" id="passwordInput" name="password" class="form-control" placeholder="Enter your password">
+            <button id="submitButton" class="btn btn-primary">Submit</button>
+            <a href="login.html" class = 'btn btn-primary'>LOGIN</a>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,112 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Refreshing and clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Light gray background */
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+  }
+  
+  /* Container with subtle animation */
+  .container {
+    max-width: 550px;
+    margin: 120px auto;
+    padding: 40px;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    animation: container-grow 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes container-grow {
+    from {
+      transform: scale(0.95);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: #fff; /* White card background */
+    padding: 0;
+    border-radius: 10px; /* Inherit container's rounded corners */
+    overflow: hidden; /* Contain overflowing content within card */
+  }
+  
+  .card-header {
+    padding: 25px;
+    border-bottom: 1px solid #ddd;
+    display: flex; /* Allow for profile picture placement */
+    justify-content: space-between; /* Align items horizontally */
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  /* Profile picture with hover effect */
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover; /* Ensure image fills the container */
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1); /* Enlarge profile picture on hover */
+  }
+  
+  /* Vibrant title with subtle gradient */
+  h1 {
+    text-align: center;
+    background: linear-gradient(to right, #f0c883, #f08a50); /* Orange gradient */
+    color: #fff; /* White text */
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  #update-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #666; /* Grayish text color */
+  }
+  
+  .form-control {
+    padding: 10px 15px; /* Increased padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners for input fields */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    transition: border-color 0.3s ease-in-out; /* Smooth border change */
+  }
+  
+  .form-control:focus {
+    border-color: #f0c883; /* Orange border on focus */
+  }
+  
+  .btn-primary {
+    background-color: #f0c883; /* Orange button color */
+    color: #fff;
+    border-color: #f0c883;
+    border-radius: 5px;
+    padding: 10px 20px; /* Increased padding for buttons */
+    margin-top: 15px; /* Increased margin for better spacing */
+    cursor: pointer;
+  } 
