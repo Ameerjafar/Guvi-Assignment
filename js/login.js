@@ -13,7 +13,7 @@ $(document).ready(function(){
             success: function(response){
                 if(response === 'success') {
                     alert("Login successful!");
-                    localStorage.setItem('username', username);
+                    localStorage.setItem('email', username);
                     window.location.href = "profile.html";
                 } else {
                     $('#message').html('Invalid username or password.');
